@@ -24,8 +24,8 @@ void pulse_at(int intensity, long time) {
 
 void loop() {
   int duration = 15;
-  for(float i = 0; i < 6.28; i += 0.02) {
-    int v = ((sin(i)/2 + 0.5) * 60) + 30;
+  for(float i = 0; i < 3.14159; i += 0.02) {
+    int v = sin(i) * 60 + 30;
     pulse_at(v, duration);
   }
 }
